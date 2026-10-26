@@ -150,6 +150,8 @@
     var s = Math.min(cw / img.naturalWidth, ch / img.naturalHeight) * 1.28; // frames carry wide margins
     var w = img.naturalWidth * s, h = img.naturalHeight * s;
     ctx.clearRect(0, 0, cw, ch);
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
     ctx.drawImage(img, (cw - w) / 2, (ch - h) / 2, w, h);
   }
   function preloadFrames(done) {

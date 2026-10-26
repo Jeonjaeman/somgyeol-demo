@@ -178,6 +178,9 @@
       var dw = iw * scale, dh = ih * scale;
       var dx = (cw - dw) / 2, dy = (ch - dh) / 2 - (portrait ? ch * 0.06 : 0);
       ctx.clearRect(0, 0, cw, ch);
+      // 캔버스 크기가 바뀌면 컨텍스트 상태가 초기화되므로 그릴 때마다 고품질 보간을 다시 지정
+      ctx.imageSmoothingEnabled = true;
+      ctx.imageSmoothingQuality = 'high';
       ctx.drawImage(img, dx, dy, dw, dh);
       current = k;
     }

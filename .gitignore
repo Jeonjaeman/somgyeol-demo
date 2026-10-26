@@ -10,3 +10,7 @@ assets/frames/_*
 qa.py
 __pycache__/
 .omc/
+
+assets/frames/turntable2_full/
+assets/frames/turntable2_alpha_old/
+assets/img/codex_test/
