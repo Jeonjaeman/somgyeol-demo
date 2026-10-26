@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>솜결 데모 5종</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css">
+<style>
+:root{--bg:#F6F1E8;--ink:#1F1B16;--mute:#8B8178;--line:#E3D9CA;--acc:#5E7A5B}
+*{box-sizing:border-box}body{margin:0;font-family:Pretendard,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+main{max-width:1200px;margin:0 auto;padding:56px 24px 80px}
+h1{font-size:30px;margin:0 0 6px;letter-spacing:-.02em}
+p.lead{margin:0 0 36px;color:var(--mute);max-width:760px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px}
+a.card{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;color:inherit;text-decoration:none;transition:transform .2s,box-shadow .2s}
+a.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(31,27,22,.08)}
+a.card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;background:#eee}
+a.card .b{padding:16px 18px 18px}
+a.card h2{font-size:18px;margin:0 0 4px}
+a.card .ref{font-size:12px;color:var(--acc);font-weight:600;margin-bottom:6px}
+a.card p{margin:0;font-size:14px;color:#4A433B}
+.note{margin-top:36px;font-size:13px;color:var(--mute)}
+</style>
+</head>
+<body>
+<main>
+<h1>솜결 데모 5종</h1>
+<p class="lead">프리미엄 아기 베개 가상 브랜드 '솜결'의 메인페이지를 다섯 가지 레퍼런스 컨셉으로 각각 구성했습니다. 메인페이지만 있으며 메뉴는 hover 표시만 됩니다.</p>
+<div class="grid">
+  <a class="card" href="01-airpods/index.html"><img src="01-airpods/_qa_desktop.jpg" alt=""><div class="b"><div class="ref">컨셉 1 · Apple AirPods Pro</div><h2>스크롤 제품 스토리</h2><p>흰 배경, 한 화면 한 메시지, 스크롤 연동 회전 프레임, 큰 숫자.</p></div></a>
+  <a class="card" href="02-ipad/index.html"><img src="02-ipad/_qa_desktop.jpg" alt=""><div class="b"><div class="ref">컨셉 2 · Apple iPad Air (한국어)</div><h2>컬러풀 한국어 타이포</h2><p>파스텔 색상 라인업, 한 단어 헤드라인, 가로 스크롤 색상 선택.</p></div></a>
+  <a class="card" href="03-daylight/index.html"><img src="03-daylight/_qa_desktop.jpg" alt=""><div class="b"><div class="ref">컨셉 3 · Daylight Computer</div><h2>자연광 필름 톤</h2><p>풀블리드 영상 히어로, 고정 선언문, 자연 속 제품.</p></div></a>
+  <a class="card" href="04-modoomat/index.html"><img src="04-modoomat/_qa_desktop.jpg" alt=""><div class="b"><div class="ref">컨셉 4 · 모두의매트</div><h2>부모가 만든 브랜드 이야기</h2><p>오트 뉴트럴, 아빠의 검수 기준, 신뢰 수치, 비포 애프터.</p></div></a>
+  <a class="card" href="05-carrier/index.html"><img src="05-carrier/_qa_desktop.jpg" alt=""><div class="b"><div class="ref">컨셉 5 · 캐리어 마이크로사이트</div><h2>캠페인형 마이크로사이트</h2><p>배경 영상 히어로, 앰배서더 컨셉 3종 슬라이더, 기능 수치, 이벤트.</p></div></a>
+</div>
+<p class="note">로컬 확인: demo 폴더에서 <code>python -m http.server 8201 --bind 127.0.0.1</code> 후 http://127.0.0.1:8201/ 접속. 브랜드·수치·후기는 가상입니다.</p>
+</main>
+</body>
+</html>

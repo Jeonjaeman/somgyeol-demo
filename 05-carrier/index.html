@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>솜결 | ALL NEW 솜결 에어 베개 깨어 있는 시간 캠페인</title>
+<meta name="description" content="앰배서더 서이안(가상)과 함께하는 솜결 에어 베개 깨어 있는 시간 캠페인. 포토 콘테스트와 리뷰 이벤트 안내. 디자인 시안용 데모.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 상단 프로모 바 -->
+<div class="promo" id="promo">
+  <p><span class="promo-tag">[ 이벤트 ]</span> 우리 아기 깨어 있는 시간 포토 콘테스트 진행 중 <span class="promo-date">2026.11.01 ~ 12.15</span></p>
+</div>
+
+<!-- 헤더 -->
+<header class="header" id="header">
+  <a class="wordmark" href="javascript:void(0)" aria-label="somgyeol 홈">somgyeol</a>
+  <div class="header-right">
+    <span class="header-label">AWAKE TIME CAMPAIGN</span>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="sideMenu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- 오프캔버스 메뉴 -->
+<div class="side-backdrop" id="sideBackdrop" hidden></div>
+<aside class="side" id="sideMenu" aria-hidden="true">
+  <div class="side-head">
+    <span class="wordmark dark">somgyeol</span>
+    <button class="side-close" id="sideClose" type="button" aria-label="메뉴 닫기"><span></span><span></span></button>
+  </div>
+  <nav class="side-nav" aria-label="사이트 메뉴">
+    <a href="javascript:void(0)"><em>01</em>캠페인</a>
+    <a href="javascript:void(0)"><em>02</em>제품</a>
+    <a href="javascript:void(0)"><em>03</em>이벤트</a>
+    <a href="javascript:void(0)"><em>04</em>리뷰</a>
+    <a href="javascript:void(0)"><em>05</em>고객센터</a>
+  </nav>
+  <div class="side-foot">
+    <p class="side-cs">고객센터 <strong>0000-0000</strong><br>평일 10:00 ~ 17:00 (점심 12:30 ~ 13:30)</p>
+    <p class="side-note">메뉴는 데모용으로 이동하지 않습니다.</p>
+  </div>
+</aside>
+
+<main>
+
+<!-- 1. 히어로 -->
+<section class="hero" id="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata"
+    poster="../assets/video/web/v04_father_baby_poster.jpg">
+    <source src="../assets/video/web/v04_father_baby.mp4" type="video/mp4">
+  </video>
+  <div class="hero-shade"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">SOMGYEOL AIR</p>
+    <h1 class="hero-title"><span class="line">ALL NEW</span><span class="line">솜결 에어 베개</span></h1>
+    <p class="hero-sub">앰배서더 서이안(가상)과 함께하는<br class="br-m"> 깨어 있는 시간 캠페인</p>
+  </div>
+  <a class="hero-badge" href="javascript:void(0)" data-scroll="#feature">
+    <span class="hero-badge-top">ALL NEW</span>
+    <span class="hero-badge-mid">솜결 에어 베개</span>
+    <span class="hero-badge-btm">제품 보기</span>
+  </a>
+  <div class="scroll-cue" aria-hidden="true">
+    <span>SCROLL</span>
+    <i class="scroll-line"></i>
+  </div>
+</section>
+
+<!-- 2. 앰배서더 소개 밴드 -->
+<section class="intro" id="intro">
+  <div class="intro-pin" id="introPin">
+    <div class="intro-slide" id="introSlide" aria-hidden="true">
+      <span>AWAKE TIME CAMPAIGN</span><span class="dot"></span><span>깨어 있는 시간</span><span class="dot"></span><span>FRESH MORNING</span><span class="dot"></span><span>LAZY AFTERNOON</span><span class="dot"></span><span>SUNNY DAY</span><span class="dot"></span><span>SOMGYEOL AIR</span>
+    </div>
+    <div class="wrap intro-body">
+      <p class="intro-label intro-step">AMBASSADOR</p>
+      <h2 class="intro-title">
+        <span class="intro-step">솜결의 앰배서더 서이안과 함께</span>
+        <span class="intro-step"><strong>아기가 깨어 있는 시간</strong>을</span>
+        <span class="intro-step">가장 잘 보이는 곳에서 보내는 하루</span>
+      </h2>
+      <p class="intro-desc intro-step">
+        보호자의 눈길이 닿는 곳, 깨어 있는 시간. 솜결 에어 베개가 머무는 자리는 언제나 그곳입니다.
+        세 가지 장면으로 담은 서이안의 하루를 만나 보세요.
+      </p>
+    </div>
+    <div class="intro-progress" aria-hidden="true"><i id="introBar"></i></div>
+  </div>
+</section>
+
+<!-- 3. 캠페인 소개 + 컨셉 썸네일 -->
+<section class="campaign" id="campaign">
+  <div class="wrap">
+    <div class="campaign-head">
+      <p class="eyebrow reveal">AWAKE TIME CAMPAIGN</p>
+      <h2 class="h-xl reveal">서이안의 <strong>깨어 있는 시간</strong></h2>
+      <p class="lead reveal">
+        아침 창가, 느긋한 오후의 소파, 햇살 좋은 공원. 아기가 깨어 있고 보호자가 곁에 있는 세 가지 장면에서
+        솜결 에어 베개가 어떤 모습으로 함께하는지 담았습니다.
+      </p>
+    </div>
+    <ul class="concept-list">
+      <li class="concept-card reveal">
+        <button type="button" data-slide="0" aria-label="Fresh Morning 장면으로 이동">
+          <span class="concept-thumb"><img src="../assets/img/web/p28_campaign_morning_m.webp" alt="창가에서 베개를 안고 웃는 서이안" loading="lazy"></span>
+          <span class="concept-num">01</span>
+          <span class="concept-en">Fresh Morning</span>
+          <span class="concept-ko">상쾌한 아침의 창가</span>
+        </button>
+      </li>
+      <li class="concept-card reveal">
+        <button type="button" data-slide="1" aria-label="Lazy Afternoon 장면으로 이동">
+          <span class="concept-thumb"><img src="../assets/img/web/p29_campaign_afternoon_m.webp" alt="소파에서 아기를 안은 서이안과 옆에 놓인 베개" loading="lazy"></span>
+          <span class="concept-num">02</span>
+          <span class="concept-en">Lazy Afternoon</span>
+          <span class="concept-ko">느긋한 오후의 소파</span>
+        </button>
+      </li>
+      <li class="concept-card reveal">
+        <button type="button" data-slide="2" aria-label="Sunny Day 장면으로 이동">
+          <span class="concept-thumb"><img src="../assets/img/web/p30_campaign_sunny_m.webp" alt="공원 돗자리 위에서 아기와 함께 있는 서이안" loading="lazy"></span>
+          <span class="concept-num">03</span>
+          <span class="concept-en">Sunny Day</span>
+          <span class="concept-ko">햇살 좋은 날의 공원</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 4. 컨셉 슬라이더 -->
+<section class="concept" id="concept">
+  <div class="wrap">
+    <div class="concept-bar">
+      <div class="concept-counter" aria-live="polite">
+        <span class="counter-cur-wrap"><span class="counter-cur" id="counterCur">01</span></span>
+        <span class="counter-sep">/</span>
+        <span class="counter-total">03</span>
+      </div>
+      <div class="concept-nav">
+        <button class="nav-btn" id="conceptPrev" type="button" aria-label="이전 장면">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="nav-btn" id="conceptNext" type="button" aria-label="다음 장면">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper concept-swiper" id="conceptSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- 01 Fresh Morning -->
+        <div class="swiper-slide">
+          <div class="slide-head">
+            <p class="slide-en">Fresh Morning</p>
+            <h3 class="slide-ko">상쾌한 아침, 창가의 10분</h3>
+            <p class="slide-caption">커튼을 걷고 아기가 눈을 뜨면, 보호자 손이 닿는 창가에서 베개와 함께 하루를 엽니다.</p>
+          </div>
+          <div class="set set-a">
+            <figure class="ph ph-1"><img src="../assets/img/web/p28_campaign_morning.webp" srcset="../assets/img/web/p28_campaign_morning_m.webp 960w, ../assets/img/web/p28_campaign_morning.webp 1920w" sizes="(max-width: 768px) 100vw, 60vw" alt="창가에서 베개를 안고 웃는 서이안" loading="lazy"></figure>
+            <figure class="ph ph-2"><img src="../assets/img/web/p06_baby_topdown_m.webp" alt="깨어 있는 아기와 엄마 손, 위에서 본 장면" loading="lazy"></figure>
+            <figure class="ph ph-3"><img src="../assets/img/web/p26_cover_unzip_m.webp" alt="커버 지퍼를 여는 손" loading="lazy"></figure>
+          </div>
+        </div>
+
+        <!-- 02 Lazy Afternoon -->
+        <div class="swiper-slide">
+          <div class="slide-head">
+            <p class="slide-en">Lazy Afternoon</p>
+            <h3 class="slide-ko">느긋한 오후, 소파 옆자리</h3>
+            <p class="slide-caption">아기를 안고 쉬는 오후. 베개는 소파 옆에 두었다가 깨어 있는 시간에만 꺼냅니다.</p>
+          </div>
+          <div class="set set-b">
+            <figure class="ph ph-1"><img src="../assets/img/web/p29_campaign_afternoon.webp" srcset="../assets/img/web/p29_campaign_afternoon_m.webp 960w, ../assets/img/web/p29_campaign_afternoon.webp 1792w" sizes="(max-width: 768px) 100vw, 40vw" alt="소파에서 아기를 안은 서이안" loading="lazy"></figure>
+            <figure class="ph ph-2"><img src="../assets/img/web/p31_night_lamp_m.webp" alt="저녁 조명 아래 놓인 베개" loading="lazy"></figure>
+            <figure class="ph ph-3"><img src="../assets/img/web/p09_father_baby_m.webp" alt="거실에서 아기를 안아 올리는 아빠" loading="lazy"></figure>
+          </div>
+        </div>
+
+        <!-- 03 Sunny Day -->
+        <div class="swiper-slide">
+          <div class="slide-head">
+            <p class="slide-en">Sunny Day</p>
+            <h3 class="slide-ko">햇살 좋은 날, 공원 돗자리</h3>
+            <p class="slide-caption">바람이 지나가는 잔디 위. 보호자 곁에서 아기가 깨어 있는 동안만 베개를 펼칩니다.</p>
+          </div>
+          <div class="set set-b">
+            <figure class="ph ph-1"><img src="../assets/img/web/p30_campaign_sunny.webp" srcset="../assets/img/web/p30_campaign_sunny_m.webp 960w, ../assets/img/web/p30_campaign_sunny.webp 1792w" sizes="(max-width: 768px) 100vw, 40vw" alt="공원에서 아기를 안은 서이안" loading="lazy"></figure>
+            <figure class="ph ph-2"><img src="../assets/img/web/p08_grass_m.webp" alt="잔디 위에 놓인 베개" loading="lazy"></figure>
+            <figure class="ph ph-3"><img src="../assets/img/web/p24_baby_studio_blue_m.webp" alt="하늘색 배경에서 베개를 안고 웃는 아기" loading="lazy"></figure>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. 인터뷰 티저 -->
+<section class="interview" id="interview">
+  <div class="wrap">
+    <div class="interview-head reveal">
+      <p class="eyebrow">INTERVIEW</p>
+      <h2 class="h-xl">서이안이 말하는<br><strong>깨어 있는 시간</strong></h2>
+      <p class="lead">"베개는 재울 때가 아니라, 같이 놀 때 꺼내요." 캠페인 촬영 현장에서 나눈 짧은 이야기를 영상으로 담았습니다.</p>
+    </div>
+    <button class="interview-thumb reveal" id="playBtn" type="button" aria-label="인터뷰 영상 재생">
+      <img src="../assets/video/web/v02_baby_topdown_poster.jpg" alt="인터뷰 영상 썸네일, 엄마 손과 웃는 아기">
+      <span class="play">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6.5v11l9-5.5z" fill="currentColor"/></svg>
+      </span>
+      <span class="interview-dur">00:06</span>
+    </button>
+  </div>
+</section>
+
+<!-- 인터뷰 모달 -->
+<div class="modal" id="videoModal" hidden>
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-label="인터뷰 영상">
+    <button class="modal-close" id="modalClose" type="button" aria-label="닫기"><span></span><span></span></button>
+    <video id="modalVideo" muted loop playsinline preload="none" poster="../assets/video/web/v02_baby_topdown_poster.jpg">
+      <source src="../assets/video/web/v02_baby_topdown.mp4" type="video/mp4">
+    </video>
+    <p class="modal-note">무음 데모 클립입니다. 실제 인터뷰 영상은 촬영 후 교체합니다.</p>
+  </div>
+</div>
+
+<!-- 6. 제품 특징: 강조 핀 -->
+<section class="emph" id="emph">
+  <div class="emph-pin" id="emphPin">
+    <p class="emph-label">ALL NEW</p>
+    <p class="emph-text" id="emphText">'솜결 에어 베개'</p>
+    <p class="emph-sub" id="emphSub">숨 쉬는 결, 낮고 단단한 구조, 벗겨서 빠는 커버.<br>깨어 있는 시간의 보조 도구를 다시 만들었습니다.</p>
+  </div>
+</section>
+
+<section class="feature" id="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <p class="eyebrow">PRODUCT</p>
+      <h2 class="h-xl">ALL NEW <strong>솜결 에어 베개</strong></h2>
+      <p class="lead">오가닉 코튼 커버, 3D 에어메쉬 코어, 저반발 지지 베이스. 세 겹을 분리해 빨고, 패드로 높이를 맞춥니다.</p>
+    </div>
+    <figure class="feature-visual reveal">
+      <img src="../assets/img/web/p02_exploded.webp" srcset="../assets/img/web/p02_exploded_m.webp 960w, ../assets/img/web/p02_exploded.webp 1920w" sizes="(max-width: 1024px) 100vw, 1200px" alt="솜결 에어 베개 3겹 분해도" loading="lazy">
+      <figcaption>
+        <span>① 오가닉 코튼 퀼팅 커버</span><span>② 3D 에어메쉬 코어</span><span>③ 저반발 지지 베이스</span>
+      </figcaption>
+    </figure>
+
+    <!-- 높이 단계 -->
+    <div class="steps" id="steps">
+      <div class="steps-head reveal">
+        <p class="eyebrow">HEIGHT STEP</p>
+        <h3 class="h-lg">자라는 만큼, <strong>세 단계</strong> 높이</h3>
+        <p class="lead">베이스 아래에 2 mm 인서트 패드를 끼워 0 / 2 / 4 mm로 맞춥니다. 뒤집기를 시작하면 사용을 멈춥니다.</p>
+      </div>
+      <ul class="step-list">
+        <li class="step reveal">
+          <span class="step-num"><b>0</b><i>mm</i></span>
+          <span class="step-tag">STEP 1</span>
+          <strong>패드 없이</strong>
+          <p>생후 1 ~ 2개월. 가장 낮고 단단하게 시작합니다.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num"><b>2</b><i>mm</i></span>
+          <span class="step-tag">STEP 2</span>
+          <strong>패드 1장</strong>
+          <p>생후 3 ~ 4개월. 목 가누기가 익숙해질 무렵입니다.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num"><b>4</b><i>mm</i></span>
+          <span class="step-tag">STEP 3</span>
+          <strong>패드 2장</strong>
+          <p>생후 5개월 ~ 뒤집기 전. 뒤집기를 시작하면 중단합니다.</p>
+        </li>
+      </ul>
+      <div class="seg-bar" aria-hidden="true">
+        <span class="seg"><i></i></span><span class="seg"><i></i></span><span class="seg"><i></i></span>
+      </div>
+      <div class="seg-labels" aria-hidden="true"><span>1 ~ 2개월</span><span>3 ~ 4개월</span><span>5개월 ~ 뒤집기 전</span></div>
+    </div>
+
+    <!-- 에어케어 수치 -->
+    <ul class="stats">
+      <li class="stat reveal">
+        <p class="stat-label">통기 구조</p>
+        <p class="stat-value">3D 에어메쉬</p>
+        <p class="stat-sub">통기도 <span class="ph-num">○○ cm³/cm²/s</span></p>
+        <p class="stat-desc">공인기관 시험 수치 자리. 성적서 발급 후 그대로 표기합니다.</p>
+      </li>
+      <li class="stat reveal">
+        <p class="stat-label">소재 시험</p>
+        <p class="stat-value">포름알데히드 <span class="count" data-to="20">20</span> mg/kg 이하</p>
+        <p class="stat-sub">pH 4.0 ~ 7.5</p>
+        <p class="stat-desc">유아용 섬유제품 안전기준 항목을 공인기관에서 시험했습니다(가상).</p>
+      </li>
+      <li class="stat reveal">
+        <p class="stat-label">세탁 시험</p>
+        <p class="stat-value"><span class="count" data-to="20">20</span>회 세탁</p>
+        <p class="stat-sub">수축률 2% 이내</p>
+        <p class="stat-desc">커버 분리 30도 세탁, 건조기 사용 금지 조건으로 시험했습니다(가상).</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 7. 포토 콘테스트 갤러리 -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="gallery-head reveal">
+      <div>
+        <p class="eyebrow warm">PHOTO CONTEST</p>
+        <h2 class="h-xl">우리 아기 <strong>깨어 있는 시간</strong></h2>
+        <p class="lead">보호자 손이 함께 보이는 사진을 보내 주세요. 가장 많은 공감을 받은 사진에 선물을 드립니다.</p>
+      </div>
+      <div class="gallery-total">
+        <span class="total-num" id="totalNum">1,284</span>
+        <span class="total-label">명 참여 (가상)</span>
+      </div>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
+
+    <div class="gallery-ctrl">
+      <button class="nav-btn" id="galPrev" type="button" aria-label="이전 페이지">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="pager" id="galPager" role="group" aria-label="갤러리 페이지">
+        <button type="button" class="is-active" data-page="0" aria-current="page">1</button>
+        <button type="button" data-page="1">2</button>
+        <button type="button" data-page="2">3</button>
+      </div>
+      <button class="nav-btn" id="galNext" type="button" aria-label="다음 페이지">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- 8. 콘테스트 안내 -->
+<section class="rules" id="rules">
+  <div class="wrap rules-grid">
+    <div class="rules-intro reveal">
+      <p class="eyebrow warm">HOW TO JOIN</p>
+      <h2 class="h-xl">콘테스트 <strong>안내</strong></h2>
+      <p class="lead">깨어 있는 시간의 아기와 보호자가 함께 담긴 사진이면 충분합니다. 베개가 꼭 보이지 않아도 괜찮습니다.</p>
+      <dl class="rules-dates">
+        <div><dt>응모 기간</dt><dd>2026.11.01 ~ 2026.12.15</dd></div>
+        <div><dt>당첨 발표</dt><dd>2026.12.20 <small>사이트 공지 · 개별 안내</small></dd></div>
+      </dl>
+    </div>
+    <div class="rules-panel reveal">
+      <h3 class="panel-title">경품 <small>(가상)</small></h3>
+      <ul class="prizes">
+        <li>
+          <span class="prize-img"><img src="../assets/img/web/p10_giftbox_m.webp" alt="" loading="lazy"></span>
+          <strong>1등 (1명)</strong><span>솜결 선물 세트</span>
+        </li>
+        <li>
+          <span class="prize-img"><img src="../assets/img/web/p05_colorways_m.webp" alt="" loading="lazy"></span>
+          <strong>2등 (3명)</strong><span>컬러 커버 4종 세트</span>
+        </li>
+        <li>
+          <span class="prize-img"><img src="../assets/img/web/p00_master_3q_m.webp" alt="" loading="lazy"></span>
+          <strong>3등 (20명)</strong><span>카페 음료 기프티콘</span>
+        </li>
+      </ul>
+      <h3 class="panel-title">참여 방법</h3>
+      <ol class="howto">
+        <li><em>1</em><div><strong>깨어 있는 시간을 찍어 주세요</strong><p>아기와 보호자 손이 함께 보이면 좋습니다. 수면 중 사진은 접수하지 않습니다.</p></div></li>
+        <li><em>2</em><div><strong>사진과 한 줄 제목을 올려 주세요</strong><p>해시태그 #솜결깨어있는시간 을 붙이면 자동으로 접수됩니다.</p></div></li>
+        <li><em>3</em><div><strong>공감을 모아 주세요</strong><p>공감 수와 심사단 평가를 합산해 12월 20일 발표합니다.</p></div></li>
+      </ol>
+      <h3 class="panel-title">유의사항</h3>
+      <ul class="notes">
+        <li>본 이벤트는 중복 참여가 가능합니다. 단, 당첨은 1인 1회입니다.</li>
+        <li>접수된 사진은 솜결의 마케팅 활동에 사용될 수 있으며, 요청 시 삭제합니다.</li>
+        <li>수면 중 베개 사용 장면, 보호자 없이 아기만 있는 장면은 심사에서 제외됩니다.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 9. 리뷰 이벤트 -->
+<section class="review" id="review">
+  <div class="wrap">
+    <div class="review-card reveal">
+      <div class="review-body">
+        <span class="badge warm">REVIEW EVENT</span>
+        <h2 class="h-lg">포토 리뷰 남기고<br><strong>1만원 기프트 카드</strong> 받기</h2>
+        <p class="lead">솜결 에어 베개를 사용 중이라면 깨어 있는 시간 사진 한 장과 짧은 소감을 남겨 주세요. 매달 20명을 추첨해 기프트 카드를 보내 드립니다(가상).</p>
+        <a class="btn-primary" href="javascript:void(0)">리뷰 작성하러 가기</a>
+        <ul class="review-terms">
+          <li>기간: 2026.11.01 ~ 2026.12.31, 매월 말 추첨 후 다음 달 5일 발표</li>
+          <li>사진 1장 이상, 본문 50자 이상의 리뷰만 응모로 인정됩니다.</li>
+          <li>기프트 카드는 가입 시 등록한 휴대폰 번호로 발송되며, 제세공과금은 솜결이 부담합니다.</li>
+          <li>이벤트 내용과 수치는 데모용 가상 내용입니다.</li>
+        </ul>
+      </div>
+      <figure class="review-visual">
+        <img src="../assets/img/web/p10_giftbox_m.webp" alt="솜결 선물 상자" loading="lazy">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 10. 안전 안내 (필수) -->
+<section class="safety" id="safety">
+  <div class="wrap">
+    <p class="eyebrow reveal">SAFETY FIRST</p>
+    <h2 class="h-lg reveal">먼저, <strong>보건 권고</strong>를 안내합니다</h2>
+    <div class="safety-grid">
+      <div class="safety-col reveal">
+        <h3>질병관리청 권고</h3>
+        <p>질병관리청은 아기를 똑바로 눕혀 재우고, 잠자리에 베개나 쿠션, 인형 등을 두지 말 것을 권합니다. 두상 관리의 기본은 자세 바꾸기와 터미타임입니다.</p>
+      </div>
+      <div class="safety-col reveal">
+        <h3>솜결 에어 베개 사용 원칙</h3>
+        <p><strong>수면 중 사용을 권하지 않습니다. 보호자가 지켜보는 깨어 있는 시간에 사용하세요. 뒤집기를 시작하면 사용을 중단하세요.</strong> 솜결은 깨어 있는 시간의 보조 도구입니다.</p>
+      </div>
+      <div class="safety-col reveal">
+        <h3>인증 표기</h3>
+        <p><span class="kc">KC 안전확인 신고번호 CB0000-0000</span><br>어린이제품 안전특별법 · 유아용 섬유제품 (가상 표기). OEKO-TEX Standard 100 Class I 원단(가상 표기).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 11. 푸터 -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="wordmark dark">somgyeol</span>
+        <span class="copy">COPYRIGHT 2026 SOMGYEOL CO., LTD. ALL RIGHTS RESERVED.</span>
+      </div>
+      <div class="footer-tools">
+        <ul class="social" aria-label="소셜 미디어 (데모)">
+          <li><a href="javascript:void(0)" aria-label="인스타그램"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="16.2" cy="7.8" r="1" fill="currentColor"/></svg></a></li>
+          <li><a href="javascript:void(0)" aria-label="유튜브"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="10" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 9.8v4.4l3.8-2.2z" fill="currentColor"/></svg></a></li>
+          <li><a href="javascript:void(0)" aria-label="블로그"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h12v12H6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 10h6M9 13h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a></li>
+          <li><a href="javascript:void(0)" aria-label="카카오 채널"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6c-3.9 0-7 2.4-7 5.3 0 1.9 1.3 3.5 3.2 4.4L7.6 18.5l3.3-2c.4.1.7.1 1.1.1 3.9 0 7-2.4 7-5.3S15.9 6 12 6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a></li>
+        </ul>
+        <div class="family">
+          <label class="family-select"><span>FAMILY SITE</span><select disabled aria-label="패밀리 사이트 (데모)"><option>FAMILY SITE</option></select>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="footer-info">
+      <dl>
+        <div><dt>상호</dt><dd>솜결 주식회사 (가상)</dd></div>
+        <div><dt>대표</dt><dd>김○○</dd></div>
+        <div><dt>사업자등록번호</dt><dd>000-00-00000</dd></div>
+        <div><dt>통신판매업신고</dt><dd>2026-대구○○-0000</dd></div>
+        <div><dt>주소</dt><dd>대구광역시 ○○구 ○○로 00, 0층 (가상)</dd></div>
+        <div><dt>개인정보보호책임자</dt><dd>김○○ (hello@somgyeol.example)</dd></div>
+      </dl>
+      <div class="footer-cs">
+        <p class="cs-label">고객센터</p>
+        <p class="cs-num">0000-0000</p>
+        <p class="cs-time">평일 10:00 ~ 17:00 · 점심 12:30 ~ 13:30 · 주말 및 공휴일 휴무</p>
+      </div>
+    </div>
+    <p class="footer-safety">수면 중 사용을 권하지 않습니다. 보호자가 지켜보는 깨어 있는 시간에 사용하세요. 뒤집기를 시작하면 사용을 중단하세요.</p>
+    <p class="footer-demo">본 페이지는 디자인 시안용 데모이며 브랜드·수치·후기는 가상입니다. 포토 콘테스트의 참여 수와 사진 설명도 모두 가상입니다. 앰배서더 서이안은 가상의 인물입니다.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

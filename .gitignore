@@ -1,0 +1,12 @@
+# 원본 대용량 자산은 제외 (웹용 web/ 폴더만 배포)
+assets/img/*.png
+assets/img/*.jpg
+assets/img/_*
+assets/video/*.mp4
+assets/video/_*
+assets/frames/turntable2/
+assets/frames/_*
+*_qa_report.json
+qa.py
+__pycache__/
+.omc/
